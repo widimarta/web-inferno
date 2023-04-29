@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--secondary);
+  font-family: "DM Serif Display", serif;
+}
+
+p,
+span,
+a {
+  color: var(--text-primary);
+  font-family: "Jost", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 48px;
+  column-gap: 10px;
+  border: none;
+  border-radius: 18px;
+  background-color: black;
+  cursor: pointer;
+}
+.button span{
+  color: var(--neutral);
+  transition: color 0.1s;
+}
+
+.button:hover span{
+  color: var(--primary);
+}
+
+.button:hover img {
+  transform: translateX(15px);
+}
+
+.button img {
+  transition: transform 0.4s;
+}

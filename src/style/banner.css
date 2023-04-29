@@ -1,0 +1,51 @@
+.banner-section {
+    background-image:url(../images/banner-bg.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-position:center;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 0 0 0 180px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    animation: myHero 3s infinite;
+
+}
+
+@keyframes myHero {
+    0% {
+        background-image: url(../images/hero01.jpg);
+    }
+    50% {
+        background-image: url(../images/hero02.jpg);
+    }
+
+    100% {
+        background-image: url(../images/hero01.jpg);
+    }
+}
+
+.banner-section::before {
+    content:" ";
+    background-image: url(../images/hero-overlay.svg);
+    width: 100%;
+    height:100% ;
+    position: absolute;
+    z-index: 1;
+}
+
+.banner-section .container {
+    z-index: 10;
+}
+
+
+.banner-section #intro #sub-content {
+    width: 567px;
+    margin-bottom: 22px;
+
+}
+
+.banner-section #intro #sub-content h1 {
+    font-size:85px;
+}
